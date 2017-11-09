@@ -1,6 +1,10 @@
 Revision history
 ===============================
 
+v1.2.0 My updates for Kmom02
+* Added LESS modules
+* Updated Makefile
+
 
 v0.2.0 (2017-10-27)
 -------------------------------
