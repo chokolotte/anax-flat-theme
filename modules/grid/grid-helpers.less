@@ -1,0 +1,28 @@
+/**
+ * Responsive Grid
+ */
+// Default grid, change to fit your requirements.
+// @columnWidth:   60;
+// @gutterWidth:   20;
+// @columns:       12;
+@import("grid-float.less");
+
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+
+
+/**
+ * Show grid.
+ */
+.showGrid(@maxWidth: 1100px; @gridImage) {
+    background: url("@{gridImage}") repeat-y fixed center center;
+    background-size: 100% auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @maxWidth;
+
+    @media (min-width: @maxWidth) {
+        background-size: @maxWidth auto;
+    }
+}
