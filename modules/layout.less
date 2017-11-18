@@ -60,8 +60,8 @@
 .main.has-sidebar-left {
     //.column(@columns);
     text-align: center;
-    .column(18);
-    //.push(5);
+    .column(16);
+    .push(1);
 }
 
 .main {
@@ -81,18 +81,13 @@
     border-top: 1px solid limegreen;
 }
 
-.outer-wrap-header,
 .outer-wrap-main,
 .footer-column-wrapper {
     margin-bottom: @magicNumber;
 }
+
 .footer-column-wrapper {
     .clearfix();
-}
-.outer-wrap-footer {
-    padding-top:16px;
-    padding-bottom:16px;
-    border-top: 2px solid limegreen;
 }
 
 .bylineWrapper {
@@ -101,5 +96,5 @@
 
 .block.toc {
     .column(5);
-    margin-top: 40px;
+    //margin-top: 40px;
 }

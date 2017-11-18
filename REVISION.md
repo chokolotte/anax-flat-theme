@@ -1,7 +1,9 @@
 Revision history
 ===============================
+v3.0.0 My updates for Kmom03
+* Addess modules for vertical and horizontal grids.
 
-v1.2.0 My updates for Kmom02
+v1.2.0  (= V2.0.0) My updates for Kmom02
 * Added LESS modules
 * Updated Makefile
 
