@@ -22,24 +22,26 @@ body {
 }
 
 //header parts
-.inner-wrap-header {
-    margin-top: 2px;
-    margin-bottom: 23px;
-}
-
 nav div ul a {
+    @fontSize: 1.125em;
     padding-top: 8px !important;
     padding-bottom: 8px !important;
-    //.font(@fontFamilyVerdana);
-    font: 1.125em/1.5 Verdana, Geneva, sans-serif;
+    .font(@fontSize; @fontFamilyVerdana);
+    .fontSize(@fontSize);
 }
 
 .site-header {
     @height: 40px;
     .calcMargin(@height);
-    padding-top: @margin / 2 !important;
-    padding-bottom: @margin / 2  + 2px !important;
-    .font(@fontFamilyVerdana);
+    margin-top:  8px !important;
+    margin-bottom: @magicNumber + @margin !important;
+}
+
+.site-logo-text {
+    @fontSize: 1.125em;
+    .font(@fontSize; @fontFamilyVerdana);
+    .fontSize(@fontSize);
+    padding-top: 3px;
 }
 
 .rm-default a {
@@ -49,7 +51,7 @@ nav div ul a {
 //flash part
 .flash-wrap {
     height: 186px;
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 
 //breadcrumb
@@ -62,9 +64,18 @@ nav div ul a {
     margin-bottom : 29px;
 }
 
+//main
+.outer-wrap-main {
+    margin-bottom: @magicNumber - 1px;
+}
+
 //footer
+.footer-column-wrapper {
+    margin-bottom: @magicNumber;
+}
+
 .outer-wrap-footer {
-    padding-bottom:16px;
+    padding-bottom: 16px;
     border-top: 2px solid limegreen;
 }
 

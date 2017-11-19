@@ -12,7 +12,7 @@
 }
 
  .route-grid {
-     .container();
+    .container();
     .showGrid(@maxWidth, @gridImage);
  }
 
@@ -49,7 +49,6 @@
 
 .sidebar-content {
     .column(5);
-    //outline: solid limegreen;
     text-align: center;
     & h2 {
         margin-top: 24px;
@@ -58,10 +57,9 @@
 }
 
 .main.has-sidebar-left {
-    //.column(@columns);
-    text-align: center;
     .column(16);
     .push(1);
+    text-align: center;
 }
 
 .main {
@@ -81,11 +79,6 @@
     border-top: 1px solid limegreen;
 }
 
-.outer-wrap-main,
-.footer-column-wrapper {
-    margin-bottom: @magicNumber;
-}
-
 .footer-column-wrapper {
     .clearfix();
 }
@@ -96,5 +89,7 @@
 
 .block.toc {
     .column(5);
-    //margin-top: 40px;
+    & h4 {
+        .push(1);
+    }
 }
