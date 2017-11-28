@@ -1,5 +1,11 @@
 Revision history
 ===============================
+V4.0.0 For Kmom04
+* Makefile updated to create more styles
+* new less files for my themes, base.less, light.less, lightColor.less, dark.less, colorful.less, fontstyle.less and style.less (default)
+* added color variables in the old less-files to set them from the new theme-less files.
+* removed site-logo-text style parts
+
 V3.0.1 Minor updates for Kmom03
 
 v3.0.0 My updates for Kmom03

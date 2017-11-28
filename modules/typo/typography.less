@@ -3,10 +3,10 @@
 @import "typography-mixins.less";
 @import "typography-defaults.less";
 
-@colorH1BorderBottom: limegreen;
-@colorH2BorderBottom: limegreen;
-
-
+@colorH1BorderBottom: silver;
+@colorH2BorderBottom: silver;
+@colorFooterTopBorder: silver;
+@colorGridBg: white;
 body {
     .font();
     .typographyHeadings();
@@ -19,6 +19,7 @@ body {
 
 .hgrid, .route-typography {
     background-image: url(../img/horisontal-grid-24.png);
+    background-repeat: repeat;
 }
 
 //header parts
@@ -76,7 +77,7 @@ nav div ul a {
 
 .outer-wrap-footer {
     padding-bottom: 16px;
-    border-top: 2px solid limegreen;
+    border-top: 2px solid @colorFooterTopBorder;
 }
 
 //block-toc

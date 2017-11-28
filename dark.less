@@ -1,0 +1,53 @@
+/**
+* Anax Flat theme with dark background and light text
+*/
+@import url(light.less);
+
+@baseColor: DarkGreen;
+//@detailsColor: black;
+@detailsColor: #510000;
+@borderColor: @detailsColor;
+@linkColor: @textColor;
+@footerColor: @baseColor;
+@colorH1BorderBottom: transparent;
+//@textColor: #00AC00;
+//@textColor: #66FF66;
+@textColor: #50B250;
+
+@menyTexture: url("../img/brushed-alum-dark.png");
+@footerTexture: url("../img/brushed-alum-dark.png");
+
+@navbarItemHoverBgColor: @detailsColor;
+
+//set light text
+body {
+    color: @textColor;
+}
+
+//set black details
+.profile {
+    color: @detailsColor;
+}
+h1, h4 {
+    color: @detailsColor;
+}
+
+//general backgrounds
+.wrap-all {
+    background-color: @baseColor;
+}
+.outer-wrap-footer {
+    background-color: @detailsColor;
+}
+.outer-wrap-flash {
+    background-color: @baseColor;
+}
+.outer-wrap-breadcrumb {
+    background-color: @baseColor;
+}
+.site-header {
+    background-color: @baseColor;
+}
+header {
+    background-color: @baseColor;
+}

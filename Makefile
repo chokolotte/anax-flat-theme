@@ -39,7 +39,7 @@ VENDORBIN 	= vendor/bin
 NPMBIN		= node_modules/.bin
 
 # LESS and CSS
-LESS 		 	= style.less #style1.less #style2.less
+LESS 		 	= style.less base.less light.less lightColor.less colorful.less dark.less fontstyle.less #style1.less #style2.less
 LESS_MODULES	= modules/
 LESS_OPTIONS 	= --strict-imports --include-path=$(LESS_MODULES)
 CSSLINT_OPTIONS = --quiet
@@ -147,7 +147,7 @@ update:
 # target: npm-install        - Install npm development npm packages.
 # target: npm-update         - Update npm development npm packages.
 # target: npm-version        - Display version for each npm package.
-.PHONY: npm-installl npm-update npm-version
+.PHONY: npm-install npm-update npm-version
 npm-install:
 	@$(call HELPTEXT,$@)
 	npm install

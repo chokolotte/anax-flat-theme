@@ -1,7 +1,9 @@
 @import "grid/grid-helpers.less";
 
+@colorGridBg: white;
+@colorFooterBorder: black;
 @maxWidth: 980px;
-//@gridImage: "./img/grid/grid940x12x60x20-nomargin.png";
+
 @gridImage: "../img/grid/grid950x24x30x10-nomargin.png";
 
 .inner-wrap{
@@ -21,7 +23,7 @@
 }
 
  .site-logo-text {
-     .column(@columns/4);
+     .column(3);
  }
 
 .rm-navbar-top {
@@ -59,7 +61,7 @@
 .main.has-sidebar-left {
     .column(16);
     .push(1);
-    text-align: center;
+    text-align: left;
 }
 
 .main {
@@ -76,7 +78,7 @@
 .site-footer {
     .column(@columns);
     text-align: center;
-    border-top: 1px solid limegreen;
+    border-top: 1px solid @colorFooterBorder;
 }
 
 .footer-column-wrapper {
