@@ -1,5 +1,10 @@
 Revision history
 ===============================
+
+V5.0.0 For Kmom05
+* Added theme figure,
+* small updates in some other less-files reg images
+
 V4.0.0 For Kmom04
 * Makefile updated to create more styles
 * new less files for my themes, base.less, light.less, lightColor.less, dark.less, colorful.less, fontstyle.less and style.less (default)

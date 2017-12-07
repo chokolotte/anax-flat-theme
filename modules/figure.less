@@ -1,0 +1,129 @@
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+@magicNumber: 24px;
+
+.figure {
+    display: table;
+    padding: 0;
+    margin: 0;
+    //margin-bottom: @magicNumber - 4px;
+    margin-bottom: @magicNumber;
+    //border: 2px solid #7F6300;
+    //border: 2px solid black;
+    a {
+
+    }
+
+    img {
+        max-width: 100%; // Make images responsive
+        display: block;
+        border-radius: 10px;
+    }
+
+    figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        padding-top: @magicNumber / 2;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    /* Chrome shinks images in td */
+    td img {
+        max-width: none;
+    }
+
+    /* Position the images */
+    &.left {
+        float: left;
+        margin-right: 8px;
+        &.byline {
+            max-width: 25%;
+            padding: 2%;
+        }
+    }
+
+    &.right {
+        float: right;
+        margin-left: 8px;
+    }
+
+    &.center {
+        clear: both;
+        margin: auto;
+
+        figcaption {
+            text-align: center;
+        }
+        &.stugbild {
+            max-width: 35%;
+        }
+        &.naturbildBohus {
+            padding-top : @magicNumber;
+            padding-bottom : @magicNumber;
+            max-width: 80%;
+        }
+    }
+    @media screen {
+        @media (max-width: 1080px){
+            &.w50 {
+
+            }
+        }
+        @media (max-width: 600px) {
+            &.w50 {
+                width: 300px;
+            }
+
+            &.w25 {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            &.w50 {
+                width: 225px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            &.w50 {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            &.w50 {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            &.w50 {
+                min-width: 100%;
+            }
+
+            &.left,
+            &.right {
+                float: none;
+                margin-left: 0;
+                margin: right: 0;
+            }
+        }
+    }
+}
+
+// blog-specific
+.author-byline {
+    clear: both;
+}
+.meta-footer {
+    clear: both;
+}
+.nyttStycke {
+    clear:both;
+    margin-bottom: @magicNumber;
+}
