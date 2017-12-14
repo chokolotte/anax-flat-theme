@@ -1,0 +1,61 @@
+/**
+* Anax Flat theme.
+* Theme with photos as design elements in the background.
+*/
+@import url(light.less);
+@footerTextColor : #E0E0E0;
+@footerTexture: "";
+.footer-column-wrapper {
+
+    background-image : url(../image/naturbildVarberg.jpg?r=180&f=negate&cf&a=0,20,0,10);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    opacity: 0.7;
+}
+
+.footer-column-1 {
+text-align : left;
+}
+
+.footer-column-2 {
+    & h4 {
+        color: @footerTextColor;
+    }
+    & ul li {
+        color: @footerTextColor;
+    }
+    & a {
+        color:  @footerTextColor;
+    }
+}
+
+.site-footer {
+    background-image: url(../image/naturbildVarberg.jpg?r=180&f=contrast,30&cf&a=0,20,0,10);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*trick to have opacity only on background. didn't work so great.
+.site-footer {
+    position: relative;
+}
+
+.site-footer:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image/naturbildVarberg.jpg?r=180&f=contrast,20&sa=png);
+    //background-position: center;
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+*/

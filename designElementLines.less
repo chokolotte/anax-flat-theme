@@ -1,0 +1,64 @@
+/**
+* Anax Flat theme.
+* Theme with design elements line, texture, shape.
+*/
+@import url(light.less);
+
+@borderColor: black;
+@maxWidth = 100%;
+@footerColor = inherit;
+@footerTexture = "";
+
+/*.outer-wrap-header {
+    background-image : url(../image/MinSeedOfLifeGray.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: 60px 60px;
+
+}*/
+.outer-wrap-main {
+    background-image : url(../image/floweroflifegrey.png), url(../image/MinSeedOfLifeGray.png);
+    background-position: left, right;
+    background-repeat: no-repeat, repeat-y;
+    background-size: 500px 500px, 200px 200px;
+    background-attachment: fixed, fixed;
+}
+
+.rm-desktop li a {
+    border: 1px solid black;
+}
+
+.bylineWrapper {
+    border: 7px double @borderColor;
+}
+
+h1 {
+    border-bottom: 10px double @borderColor !important;
+}
+
+
+
+.outer-wrap-footer {
+    border: 0;
+    //background-image : url(../image/floweroflifegrey.png);
+    background-image : url(../image/MinSeedOfLifeGray.png);
+    background-position: left;
+    background-repeat: repeat-x;
+    background-size: 200px 200px;
+}
+
+.column h4 {
+    background-color: @baseColor;
+    background-image : @menyTexture;
+}
+
+.inner-wrap-footer {
+    background-image: none;
+    background-color: transparent;
+}
+
+.site-footer {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+}

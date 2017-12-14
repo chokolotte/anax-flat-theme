@@ -1,0 +1,49 @@
+/**
+* Anax Flat theme.
+* Theme extending design element color, gradients.
+* Design principles already used are Unity (similar colors) and Variation(diffent gradient directions)
+* Added design principle movement when hovering on different parts
+*/
+@import url(designElementGradients.less);
+
+
+html {
+    transition: all 2s ease-in-out;
+}
+html:hover {
+    background: radial-gradient(white, yellow);
+}
+
+.rm-desktop li a {
+    transition: all 1s linear;
+}
+.rm-desktop li a:hover {
+    //background: linear-gradient(to bottom left, darken(yellow, 10%), darken(red, 10%));
+    box-shadow: 1px 1px black, 2px 2px black, 3px 3px black;
+    transform: translateX(-3px);
+}
+
+h1 {
+    transition: all 3s linear;
+}
+h1:hover {
+    background: linear-gradient(to right, yellow, red);
+}
+
+
+.inner-wrap-footer {
+    transition: all 3s linear;
+}
+.inner-wrap-footer:hover {
+
+    background: linear-gradient(to top right, yellow, red);
+}
+
+.site-footer {
+    transition: all 3s linear;
+
+}
+.site-footer:hover {
+
+    background: linear-gradient(to top right, lighten(yellow, 10%), lighten(red, 10%));
+}

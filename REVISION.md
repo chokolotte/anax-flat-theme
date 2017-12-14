@@ -1,5 +1,7 @@
 Revision history
 ===============================
+V6.0.0 For Kmom06
+* added themes for designelements and principles
 
 V5.0.0 For Kmom05
 * Added theme figure,
