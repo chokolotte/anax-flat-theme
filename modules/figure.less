@@ -7,17 +7,12 @@
     display: table;
     padding: 0;
     margin: 0;
-    //margin-bottom: @magicNumber - 4px;
-    margin-bottom: @magicNumber;
-    //border: 2px solid #7F6300;
-    //border: 2px solid black;
-    a {
 
-    }
+    margin-bottom: @magicNumber;
 
     img {
         max-width: 100%; // Make images responsive
-        display: block;
+        //display: block;
         border-radius: 10px;
     }
 
@@ -58,15 +53,8 @@
         figcaption {
             text-align: center;
         }
-        &.stugbild {
-            max-width: 35%;
-        }
-        &.naturbildBohus {
-            padding-top : @magicNumber;
-            padding-bottom : @magicNumber;
-            max-width: 80%;
-        }
     }
+
     @media screen {
         @media (max-width: 1080px){
             &.w50 {
@@ -122,8 +110,4 @@
 }
 .meta-footer {
     clear: both;
-}
-.nyttStycke {
-    clear:both;
-    margin-bottom: @magicNumber;
 }

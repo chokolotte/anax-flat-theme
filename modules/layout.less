@@ -1,10 +1,11 @@
+/** --------------------------------------------------------------
+ * Module that is responsible for handling the vertical grid in all regions
+ */
+
 @import "grid/grid-helpers.less";
 
-@colorGridBg: white;
-@colorFooterBorder: black;
 @maxWidth: 980px;
-
-@gridImage: "../img/grid/grid950x24x30x10-nomargin.png";
+@gridImage: "../img/grid/grid950x24x30x10-nomargin-bw.png";
 
 .inner-wrap{
     .container();
@@ -13,24 +14,22 @@
     }
 }
 
- .route-grid {
+.route-grid {
     .container();
     .showGrid(@maxWidth, @gridImage);
- }
+}
 
 .row {
     .row();
 }
 
- .site-logo-text {
+.site-logo-text {
      .column(3);
- }
+}
 
 .navbar2 {
     .column(18);
     .push(2);
-    //float: none;
-    //display: block;
 }
 
 .rm-desktop {
@@ -38,15 +37,6 @@
         margin-right: 10px;
     }
 }
-/*.rm-navbar-top {
-    .column(12);
-    .push(3);
-    float: none;
-}
-.rm-desktop {
-    .column(@columns/2);
-    //float: none;
-}*/
 
 .rm-navbar-max {
      .column(2);
@@ -54,7 +44,6 @@
 
 .flash-wrap {
     @maxWidth: 100%;
-    .push(1);
 }
 
 .breadcrumb-wrap {
@@ -63,12 +52,16 @@
 }
 
 .sidebar-content {
-    .column(5);
-    text-align: center;
+    .column(7);
+    text-align: left;
     & h2 {
         margin-top: 24px;
 
     }
+}
+
+.ff2{
+    .column(10);
 }
 
 .main.has-sidebar-left {
@@ -76,8 +69,9 @@
     .push(1);
     text-align: left;
 }
+
 .main.has-sidebar-right {
-    .column(16);
+    .column(12);
     .push(1);
     text-align: left;
 }
@@ -96,7 +90,6 @@
 .site-footer {
     .column(@columns);
     text-align: center;
-    border-top: 1px solid @colorFooterBorder;
 }
 
 .footer-column-wrapper {
@@ -130,6 +123,6 @@
 }
 
 .share {
-    .column(9);
-    .push(3);
+    .clearfix();
+    .column(12);
 }

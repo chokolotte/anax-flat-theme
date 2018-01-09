@@ -1,0 +1,57 @@
+/**
+* Anax Flat theme.
+*  a second customized theme for ArtIst
+*/
+@import url(base.less);
+
+@fontFamilyHeadings: Molle, Arial, sans-serif;
+
+@footerTexture: url("../image/red-green-party.jpg?&w=600&a=60,0,0,0
+&fill-to-fit=000000");
+
+@borderColor: black;
+@hoverColor: #F91618;
+@navbarItemHoverColor : @hoverColor;
+
+@maxWidth : 1000px;
+//setting a background image in wrap-all instead of body to have different width-settings
+body {
+    background-color: black;
+    width: 1000px;
+}
+.wrap-all {
+    background-image: url("../image/laser-show-3.jpg?"); //red star
+    background-repeat: round;
+}
+//for the meny
+.rm-default li a:hover {
+
+    color: @hoverColor;
+    text-decoration: none;
+}
+
+//the three lines, "hamburgermenu"
+.rm-small:hover {
+    color:@hoverColor;
+}
+
+.flash-wrap {
+    //setting it to 0 to be able to change img in inner-wrap-flash in this theme
+    width: 0;
+}
+.inner-wrap-flash {
+    background-image: url("../image/flashtext3.PNG?w=1000&h=130&cf");
+    height: 130px;
+    width: 1000px;
+}
+//for the footer social media icons
+.undecorated {
+    font-size: 1.375em;
+}
+
+//footer parts
+.outer-wrap-footer {
+    background-image: @footerTexture;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

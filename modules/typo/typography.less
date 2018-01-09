@@ -6,7 +6,8 @@
 @colorH1BorderBottom: silver;
 @colorH2BorderBottom: silver;
 @colorFooterTopBorder: silver;
-@colorGridBg: white;
+@hgridBackground: url(../image/horisontal-grid-24.png?f=brightness,-180);
+
 body {
     .font();
     .typographyHeadings();
@@ -17,16 +18,18 @@ body {
     .typographyOtherElements();
 }
 
-.hgrid, .route-typography {
-    background-image: url(../img/horisontal-grid-24.png);
-    background-repeat: repeat;
+.inner-wrap {
+    html.hgrid & {
+        background-image: @hgridBackground;
+        background-repeat: repeat;
+    }
 }
 
 //header parts
 nav div ul a {
     @fontSize: 1.125em;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
     .font(@fontSize; @fontFamilyVerdana);
     .fontSize(@fontSize);
 }
@@ -34,6 +37,7 @@ nav div ul a {
 .navbar2 {
     margin-bottom: @magicNumber - 2px;
 }
+
 .site-header {
     @height: 40px;
     .calcMargin(@height);
@@ -45,22 +49,24 @@ nav div ul a {
     @fontSize: 1.125em;
     .font(@fontSize; @fontFamilyVerdana);
     .fontSize(@fontSize);
-    padding-top: 3px;
-}
-
-.rm-default a {
-    font-family : @fontFamilyVerdana;
-}
-
-//flash part
-.flash-wrap {
-    height: 186px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
+    margin-left: 10px;
 }
 
 //breadcrumb
 .breadcrumb-wrap {
-    margin-bottom : 20px;
+    margin-top:  4px !important;
+}
+
+.sidebar-content {
+    margin-top: @magicNumber;
+    & p {
+        margin-top: 1px;
+    }
+}
+
+.smalText {
+    margin-top: 12px;
 }
 
 //byline
@@ -68,9 +74,9 @@ nav div ul a {
     margin-bottom : 29px;
 }
 
-//main
-.outer-wrap-main {
-    margin-bottom: @magicNumber - 1px;
+//text related
+.text {
+    .clearfix();
 }
 
 //footer
@@ -78,9 +84,16 @@ nav div ul a {
     margin-bottom: @magicNumber;
 }
 
+.footer-column {
+    margin-top: @magicNumber + 2px;
+}
+
+
 .outer-wrap-footer {
-    padding-bottom: 16px;
     border-top: 2px solid @colorFooterTopBorder;
+}
+.inner-wrap-footer {
+    margin-top: 16px;
 }
 
 //block-toc
@@ -91,4 +104,20 @@ nav div ul a {
 //blog-toc
 .blog-toc {
     margin-top: 40px;
+}
+//next-previous sections
+.next-previous {
+    padding-bottom: 10px;
+}
+
+iframe {
+    margin-top: 21px;
+}
+.readmore {
+    margin-top: 19px;
+}
+
+//blog item meta Header
+.meta-header {
+    margin-top : 4px;
 }

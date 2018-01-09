@@ -1,0 +1,59 @@
+/**
+* Anax Flat theme customized for DJ ArtIst.
+*/
+@import url(base.less);
+
+//new parameters
+@footerTexture: url("../image/rave-hands.jpg?a=0,0,10,0&cf&w=1000");
+@hoverColor: #03A495;
+
+//changing defaultvalues from imported modules/themes
+@fontFamilyHeadings: Molle, Arial, sans-serif;
+@borderColor: black;
+@navbarItemHoverColor : @hoverColor;
+
+//setting a background image
+body {
+    background-image: url("../image/laser-show-2.jpg?"); //blue star
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+//for the meny
+.rm-default li a:hover {
+    color: @hoverColor;
+    text-decoration: none;
+}
+
+//the three lines, "hamburgermenu"
+.rm-small:hover {
+    color:@hoverColor;
+}
+
+
+// for all p's following the text class
+.text ~ p {
+    width: 75%;
+    font-size: @fontSizeH4 !important;
+    margin-bottom: @magicNumber;
+}
+
+// for all h2's following the text class
+.text ~ h2 {
+    width: 75%;
+    margin-top: 53px !important;
+    margin-bottom: @magicNumber;
+}
+
+
+//footer parts
+.outer-wrap-footer {
+    background-image: @footerTexture;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//for the footer social media icons
+.undecorated {
+    font-size: 1.375em;
+}

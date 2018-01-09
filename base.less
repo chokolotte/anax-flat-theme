@@ -2,63 +2,89 @@
 * Anax Flat theme.
 */
 @import url(modules.less);
-@import
-url('https://fonts.googleapis.com/css?family=Eagle+Lake|Molle:400i');
+@import url('https://fonts.googleapis.com/css?family=Molle:400i');
 
+//new parameters
+@borderColor: white;
+@textColor: white;
+@background-color: black;
 
-@baseColor: white;
-@borderColor: black;
-@linkColor: black;
-
+//changing default values from typography
 @colorH1BorderBottom: @borderColor;
 @colorH2BorderBottom: @borderColor;
-
 @colorFooterTopBorder: @borderColor;
-@colorFooterBorder: @borderColor;
-@breadcrumbColor: @borderColor;
-@colorByline: @borderColor;
 
-@navbarItemBgColor: @baseColor;
-@navbarItemColor: @borderColor;
+//changing default value from responsive-menu
+@maxBgColor: @background-color;
+@maxButtonFontSize: 2em;
+//the close button in the dropdown meny
+@navbarMenuButtonClickedColor: @textColor;
 
-@maxBgColor: @baseColor;
+//changing default value for breadcrumb
+@breadcrumbColor: @textColor;
 
-@colorGridBg: @baseColor;
-
+//change textColor on textsections
 a {
-    color: @linkColor;
+    color: @textColor;
 }
+
+body {
+    color: @textColor;
+    background-color: @background-color;
+}
+
 
 h2 {
     clear: both;
 }
 
-.sidebar-left{
 
-    .block.toc {
-    background-color: @baseColor;
+// index page
+.audioDiv {
+    .clearfix();
+
+    width: 30%;
+    margin-left: 10px;
+}
+
+//theme-selector page
+code {
+    color: @background-color;
+}
+
+//for the meny
+.rm-default li a {
+    font-family : @fontFamilyHeadings;
+}
+
+//blog-share part
+.share {
+    .clearfix();
+}
+
+//about page
+.center {
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-footer {
+    li {
+        list-style-type: none
     }
 }
 
-.sidebar-right{
-
-    .block.toc {
-    background-color: @baseColor;
-    }
-}
-
-
-/** --------------------------------------------------------------
- *  Logo images
- */
-.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
-}
-
-.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
+.undecorated {
+    padding-left: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    li {
+        padding-left: 10px;
+        padding-top: -5px;
+        //float: left;
+        display: inline-block;
     }
 }
