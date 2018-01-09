@@ -1,5 +1,9 @@
 Revision history
 ===============================
+V10.0.X For Project, Kmom10
+* added themes for ArtIst, custom and alternative
+* modified base.less for ArtIst.
+
 V6.0.0 For Kmom06
 * added themes for designelements and principles
 
